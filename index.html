@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <title>Simulador de Cores</title>
+  </head>
+  <body>
+    <div class="row">
+      <div class="column">
+        <p>R (Red – Vermelho):</p>
+        <input
+          type="range"
+          id="inputRangeRed"
+          min="0"
+          max="255"
+          value="0"
+          step="1"
+        />
+        <input type="text" id="inputTextRed" />
+      </div>
+      <div class="column">
+        <p>G (Green – Verde):</p>
+        <input
+          type="range"
+          id="inputRangeGreen"
+          min="0"
+          max="255"
+          value="0"
+          step="1"
+        />
+        <input type="text" id="inputTextGreen" />
+      </div>
+      <div class="column">
+        <p>B (Blue – Azul):</p>
+        <input
+          type="range"
+          id="inputRangeBlue"
+          min="0"
+          max="255"
+          value="0"
+          step="1"
+        />
+        <input type="text" id="inputTextBlue" />
+      </div>
+      <div class="colorSelected"></div>
+    </div>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
